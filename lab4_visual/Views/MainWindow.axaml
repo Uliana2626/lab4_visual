@@ -1,0 +1,146 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:lab4_visual.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="lab4_visual.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="lab4_visual"
+		Width="450"
+        Height="450">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Grid  ColumnDefinitions="*, *, *, *" RowDefinitions="*, *, *, *">
+		<TextBox  Text="{Binding Result_string}"
+				  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+				  Focusable="False" IsUndoEnabled="False"
+				  FontSize="66" TextAlignment="Right">
+
+		</TextBox>
+		<Button Content="I"  CommandParameter="I"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="1" Grid.Column="0"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="V"  CommandParameter="V"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="2" Grid.Column="0"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="X"  CommandParameter="X"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="3" Grid.Column="0"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="L"  CommandParameter="L"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="1" Grid.Column="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="C"  CommandParameter="C"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="2" Grid.Column="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="D"  CommandParameter="D"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="3" Grid.Column="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="M"  CommandParameter="M"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="1" Grid.Column="2"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="+"  CommandParameter="+"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="2" Grid.Column="2"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="-"  CommandParameter="I"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="3" Grid.Column="2"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="*"  CommandParameter="*"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="1" Grid.Column="3"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="/"  CommandParameter="/"
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="2" Grid.Column="3"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+		<Button Content="="  CommandParameter="="
+				Command="{Binding OnClickCommand}"
+				FontSize="36"
+				Grid.Row="3" Grid.Column="3"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				VerticalContentAlignment="Center"
+				HorizontalContentAlignment="Center">
+
+		</Button>
+	</Grid>
+
+</Window>
